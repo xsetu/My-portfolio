@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Setu Das — Software Engineer, AI/ML and Backend portfolio.">
+<title>Setu Das — Software Engineer</title>
+<style>
+:root{
+  --bg:#07090d;--panel:#0d1118;--panel2:#111722;--text:#f4f7fb;--muted:#9aa6b6;
+  --line:#202938;--accent:#7c9cff;--accent2:#8ef0c0;--max:1180px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 80% 0%,#14203a 0,transparent 34%),var(--bg);
+color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,9,13,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.03em}
+.brand span{color:var(--accent)}.links{display:flex;gap:24px;color:var(--muted);font-size:14px}.links a:hover{color:#fff}
+.hero{min-height:calc(100vh - 72px);display:grid;align-items:center;padding:90px 0}
+.eyebrow{color:var(--accent2);font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:700}
+h1{font-size:clamp(48px,8vw,92px);line-height:.98;letter-spacing:-.065em;margin:18px 0 24px;max-width:950px}
+.hero p{font-size:clamp(18px,2vw,23px);color:var(--muted);max-width:760px;margin:0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{padding:12px 18px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-weight:700;font-size:14px}
+.btn.primary{background:#fff;color:#07090d;border-color:#fff}.btn:hover{transform:translateY(-2px);transition:.2s}
+section{padding:105px 0;border-top:1px solid rgba(255,255,255,.06)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
+.kicker{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.14em;font-weight:800}
+h2{font-size:clamp(32px,5vw,54px);line-height:1.05;letter-spacing:-.05em;margin:8px 0 0}
+.section-head p{color:var(--muted);max-width:490px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:26px}
+.about-card{grid-column:span 7}.skills-card{grid-column:span 5}
+.card h3{margin:0 0 10px;font-size:20px}.muted{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.tag{padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:#cbd5e1;font-size:13px;background:#0a0e14}
+.project{grid-column:span 12;display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:stretch}
+.project + .project{margin-top:18px}
+.project-number{font-size:12px;color:var(--accent2);font-weight:800;letter-spacing:.14em}
+.project h3{font-size:34px;letter-spacing:-.04em;margin:8px 0 10px}.project p{color:var(--muted)}
+.project-panel{background:#080b11;border:1px solid var(--line);border-radius:14px;padding:22px}
+.arch{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:#b8c4d6;white-space:pre-wrap}
+.meta{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}.meta div{padding:12px;border:1px solid var(--line);border-radius:10px}.meta b{display:block;font-size:11px;text-transform:uppercase;color:#748094;letter-spacing:.1em}.meta span{font-size:14px}
+.cert{grid-column:span 4}.cert strong{display:block;margin-bottom:7px}.cert small{color:var(--muted)}
+.timeline{border-left:1px solid var(--line);padding-left:25px}.item{position:relative;margin-bottom:30px}.item:before{content:"";position:absolute;left:-31px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}.item h3{margin:0}.item .date{color:var(--accent2);font-size:13px;font-weight:700}
+footer{padding:45px 0 65px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){
+ .links{display:none}.hero{padding:65px 0}.about-card,.skills-card,.cert{grid-column:span 12}
+ .project{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}footer{display:block}
+}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+  <a class="brand" href="#">Setu<span>.</span></a>
+  <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main>
+<section class="hero">
+<div class="container reveal">
+  <div class="eyebrow">Software Engineering • AI/ML • Backend</div>
+  <h1>Building software that solves real problems.</h1>
+  <p>Computer Engineering graduate focused on backend systems, AI/ML, real-time applications and privacy-preserving machine learning.</p>
+  <div class="actions">
+    <a class="btn primary" href="#projects">Explore projects</a>
+    <a class="btn" href="https://github.com/xsetu" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/setu-das-564bb22b5/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    <a class="btn" href="Setu-Das-Resume.pdf">Resume ↓</a>
+  </div>
+</div>
+</section>
+
+<section id="about"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">01 / Profile</div><h2>Engineering mindset.</h2></div><p>A concise portfolio built around the strongest evidence in my current resume: systems, projects, technical skills and continuous learning.</p></div>
+<div class="grid">
+<div class="card about-card reveal"><h3>About me</h3><p class="muted">I am a Computer Engineering undergraduate with a Diploma in Computer Engineering and hands-on project experience across backend development, real-time applications, computer vision and federated learning.</p><p class="muted">I enjoy breaking complex problems into practical systems, learning new technologies and building projects that combine software engineering with AI.</p></div>
+<div class="card skills-card reveal"><h3>Core focus</h3><div class="tags"><span class="tag">Backend Engineering</span><span class="tag">AI / ML</span><span class="tag">Data Science</span><span class="tag">Real-time Systems</span><span class="tag">Computer Vision</span><span class="tag">Privacy-preserving ML</span><span class="tag">Cloud</span><span class="tag">Linux</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">02 / Selected work</div><h2>Projects with technical depth.</h2></div><p>Each project is presented around the engineering problem, stack and system design—not just a list of technologies.</p></div>
+
+<div class="card project reveal"><div>
+<div class="project-number">PROJECT 01</div><h3>Federated Learning with Secure Gradient Aggregation</h3>
+<p>Implemented a privacy-preserving federated learning system using threshold cryptography. The project combines TensorFlow Federated with Shamir’s Secret Sharing to support secure gradient aggregation.</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow Federated</span><span class="tag">Shamir’s Secret Sharing</span><span class="tag">Cryptography</span></div>
+<div class="meta"><div><b>Focus</b><span>Privacy-preserving ML</span></div><div><b>Architecture</b><span>Federated clients + secure aggregation</span></div></div>
+</div><div class="project-panel"><div class="arch">CLIENT A ─┐
+CLIENT B ─┼─► SECRET SHARING ─► SECURE AGGREGATION
+CLIENT C ─┘                         │
+                                    ▼
+                              GLOBAL MODEL
+
+Goal: aggregate model updates
+without directly exposing
+individual client gradients.</div></div></div>
+
+<div class="card project reveal"><div>
+<div class="project-number">PROJECT 02</div><h3>Real-time Chat API</h3>
+<p>Developed a real-time chat application with user authentication, persistent messages and WebSocket-based instant communication.</p>
+<div class="tags"><span class="tag">Node.js</span><span class="tag">React.js</span><span class="tag">MongoDB</span><span class="tag">WebSockets</span></div>
+<div class="meta"><div><b>Focus</b><span>Real-time backend</span></div><div><b>Key areas</b><span>Auth • persistence • messaging</span></div></div>
+</div><div class="project-panel"><div class="arch">React Client
+     │
+     ▼
+Node.js API ─────► MongoDB
+     │
+     └────────────► WebSocket
+                      │
+                Instant messages</div></div></div>
+
+<div class="card project reveal"><div>
+<div class="project-number">PROJECT 03</div><h3>Modular Face Detection System</h3>
+<p>Built a real-time face detection system capable of processing both live webcam streams and video files using OpenCV and the Haar Cascade Classifier.</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Haar Cascade</span><span class="tag">Computer Vision</span></div>
+<div class="meta"><div><b>Input</b><span>Webcam / video file</span></div><div><b>Focus</b><span>Real-time detection</span></div></div>
+</div><div class="project-panel"><div class="arch">CAMERA / VIDEO
+      │
+      ▼
+FRAME CAPTURE
+      │
+      ▼
+FACE DETECTION
+      │
+      ▼
+BOUNDING BOXES / OUTPUT</div></div></div>
+</div></section>
+
+<section id="skills"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">03 / Toolkit</div><h2>Technical stack.</h2></div></div>
+<div class="grid">
+<div class="card cert reveal"><h3>Languages</h3><p class="muted">Python, Java, C, C++, C#</p></div>
+<div class="card cert reveal"><h3>Web</h3><p class="muted">HTML, CSS, JavaScript, React.js, Node.js</p></div>
+<div class="card cert reveal"><h3>Data</h3><p class="muted">MySQL, MongoDB, Data Science</p></div>
+<div class="card cert reveal"><h3>AI / ML</h3><p class="muted">Machine Learning, Artificial Intelligence, TensorFlow Federated, OpenCV</p></div>
+<div class="card cert reveal"><h3>Systems</h3><p class="muted">Linux, Git, networking fundamentals, AWS</p></div>
+<div class="card cert reveal"><h3>Tools</h3><p class="muted">Google Colab, XAMPP, Office tools</p></div>
+</div></div></section>
+
+<section id="experience"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">04 / Experience & education</div><h2>Foundation.</h2></div></div>
+<div class="grid">
+<div class="card about-card reveal"><div class="timeline">
+<div class="item"><div class="date">2021 — 2022</div><h3>Tech Mahindra — Kolkata</h3><p class="muted">Worked in the Vodafone Group PLC business process under Tech Mahindra, with responsibilities involving business process and customer management.</p></div>
+<div class="item"><div class="date">2023 — 2026</div><h3>B.Tech in Computer Engineering</h3><p class="muted">Marwadi University (NAAC A+).</p></div>
+<div class="item"><div class="date">2019 — 2022</div><h3>Diploma in Computer Engineering</h3><p class="muted">Swami Vivekananda Institute of Science & Technology, Kolkata.</p></div>
+</div></div>
+<div class="card skills-card reveal"><h3>Certifications</h3>
+<p><strong>Oracle Academy</strong><br><span class="muted">Database Programming with SQL — 2023</span></p>
+<p><strong>Cisco / LPI</strong><br><span class="muted">NDG Linux Essentials — 2024</span></p>
+<p><strong>Cisco Networking Academy</strong><br><span class="muted">CCNA v7: Switching, Routing, and Wireless Essentials — 2024</span></p>
+<p><strong>AWS Academy</strong><br><span class="muted">Cloud Foundations — 2024</span></p>
+<p><strong>AWS Academy</strong><br><span class="muted">Data Engineering — 2024</span></p>
+</div>
+</div></div></section>
+
+<section id="contact"><div class="container">
+<div class="section-head reveal"><div><div class="kicker">05 / Contact</div><h2>Let's build something useful.</h2></div><p>For interviews, engineering opportunities, collaboration or project discussions.</p></div>
+<div class="card reveal">
+<div class="actions">
+<a class="btn primary" href="mailto:setudas63@gmail.com">Email me</a>
+<a class="btn" href="https://github.com/xsetu" target="_blank" rel="noreferrer">GitHub ↗</a>
+<a class="btn" href="https://www.linkedin.com/in/setu-das-564bb22b5/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+</div>
+</div></div></section>
+</main>
+<footer class="container"><span>© 2026 Setu Das</span><span>Designed for clarity. Built for engineering conversations.</span></footer>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
